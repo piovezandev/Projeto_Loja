@@ -24,6 +24,14 @@ public class ClienteBean {
 	 return "index";	
  }
  
+ public String editar() {
+	 return "formulario";
+ }
+ public String remover() {
+	 gerenciaCliente.removerCliente(cliente);
+	 return null;
+ }
+ 
  public String novo() {
 	 cliente = new Cliente();
 	 return "formulario" ;
